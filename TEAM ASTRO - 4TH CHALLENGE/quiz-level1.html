@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quizzes 1 to 5</title>
+    <link rel="stylesheet" href="quiz-level1.css"> <!-- Link to the updated CSS file -->
+</head>
+<body>
+    <!-- Quiz Container (White Window with Shadow) -->
+    <div class="quiz-container">
+        <h2 id="quiz-question">Select a Quiz</h2>
+        <ul>
+            <li>
+                <!-- Quiz 1: Navigates to quiz-app1.html -->
+                <a href="quiz-app1.html" class="level-button">Quiz 1</a>
+            </li>
+            <li>
+                <!-- Quiz 2: Navigates to quiz-app2.html -->
+                <a href="quiz-app2.html" class="level-button">Quiz 2</a>
+            </li>
+            <li>
+                <!-- Quiz 3: Navigates to quiz-app3.html -->
+                <a href="quiz-app3.html" class="level-button">Quiz 3</a>
+            </li>
+            <li>
+                <!-- Quiz 4: Navigates to quiz-app4.html -->
+                <a href="quiz-app4.html" class="level-button">Quiz 4</a>
+            </li>
+            <li>
+                <!-- Quiz 5: Navigates to quiz-app5.html -->
+                <a href="quiz-app5.html" class="level-button">Quiz 5</a>
+            </li>
+        </ul>
+    </div>
+
+    <!-- Back Button -->
+    <button id="back-button">Back</button>
+
+    <script>
+        // Add event listener for the Back button
+        document.getElementById("back-button").addEventListener("click", () => {
+            window.location.href = "level.html"; // Navigate back to level.html
+        });
+    </script>
+</body>
+</html>

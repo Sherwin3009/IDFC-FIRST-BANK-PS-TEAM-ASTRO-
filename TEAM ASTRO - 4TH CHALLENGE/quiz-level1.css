@@ -1,0 +1,91 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: antiquewhite;
+    display: flex;
+    flex-direction: column; /* Stack elements vertically */
+    justify-content: center;
+    align-items: center;
+    height: 100vh;   
+}
+
+.quiz-container {
+    border-radius: 10px;
+    box-shadow: 0 0 10px 0 black;
+    width: 400px; /* Reduced width */
+    height: auto; /* Adjusted height */
+    background-color: white;
+    padding: 20px;
+    margin-bottom: 20px; /* Space below the quiz container for the Back button */
+}
+
+#quiz-question {
+    font-size: 1.5rem;
+    padding: 20px; 
+    text-align: center;
+}
+
+ul {
+    list-style: none;
+    margin-left: 0; /* Adjusted margin */
+    padding: 0;
+}
+
+li {
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.level-button {
+    display: block;
+    width: 80%; /* Width of quiz buttons */
+    margin: 0 auto;
+    padding: 10px;
+    background-color: #F1C40E; /* Same yellow as the quiz app */
+    color: white;
+    font-size: 1.2rem;
+    text-decoration: none;
+    border-radius: 10px;
+    text-align: center;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.level-button:hover {
+    background-color: #F39C12; /* Brighter yellow on hover */
+    transform: scale(1.05); /* Slightly enlarge on hover */
+    cursor: pointer;
+}
+
+/* Back Button */
+#back-button {
+    background-color: #e74c3c; /* Red */
+    border: none;
+    color: white;
+    font-size: 1.2rem;
+    display: block;
+    width: 10%; /* Same width as quiz buttons */
+    margin: 0 auto; /* Center horizontally */
+    padding: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Added transform for consistency */
+    text-align: center; /* Ensure text is centered */
+}
+
+#back-button:hover {
+    background-color: #c0392b; /* Darker red on hover */
+    transform: scale(1.05); /* Slightly enlarge on hover, similar to quiz buttons */
+}
+
+@media (max-width: 600px) {
+    .quiz-container {
+        width: 90%;
+    }
+    .level-button, #back-button {
+        width: 100%;
+    }
+}
